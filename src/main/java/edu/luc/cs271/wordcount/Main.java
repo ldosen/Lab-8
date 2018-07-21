@@ -16,7 +16,7 @@ public class Main {
       count.countWords(input);
     }
 
-    final List list =new ArrayList(count.getCounts().size());
+    final List<Map.Entry<String, Integer>> list = new ArrayList<>(count.getCounts().size());
     list.addAll(aMap.entrySet());
 
     Collections.sort(list, new DescendingByCount());
